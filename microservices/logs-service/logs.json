@@ -1,0 +1,7 @@
+[
+  "[2026-10-11T13:50:12.104Z] [INFO] [auth-service]: Incoming request POST /api/v1/auth/token - Origin: 127.0.0.1",
+  "[2026-10-11T13:50:12.189Z] [DEBUG] [auth-service]: Validating client credentials for user_id: 42 - Hash verified successfully.",
+  "[2026-10-11T13:50:12.245Z] [INFO] [gateway-service]: Route dispatched to [user-service] via gRPC - TraceID: 8f9b2c1a",
+  "[2026-10-11T13:50:12.310Z] [WARN] [user-service]: Cache miss for user profile 42. Falling back to primary DB replica.",
+  "[2026-10-11T14:05:00.000Z] [INFO] [auth-service]: User session initialized successfully."
+]

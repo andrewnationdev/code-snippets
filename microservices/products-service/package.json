@@ -1,0 +1,17 @@
+{
+  "name": "auth-servico",
+  "version": "1.0.0",
+  "description": "Serviço que faz o login do usuário no sistema",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "author": "andrewnation",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

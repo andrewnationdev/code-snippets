@@ -1,0 +1,17 @@
+{
+  "name": "logs-servico",
+  "version": "1.0.0",
+  "description": "Serviço que gerencia e registra os LOGS de sistema para as operações realizadas",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "author": "andrewnation",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

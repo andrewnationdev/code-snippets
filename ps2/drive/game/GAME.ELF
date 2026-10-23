@@ -1,0 +1,31 @@
+# --------------------------------------------------
+# MOCK ELF FILE - PLAYSTATION 2 EXECUTABLE (R5900)
+# GAME: Gran Turismo 4 (Demo Simulation)
+# --------------------------------------------------
+[ELF_HEADER]
+MAGIC_NUMBER=7F 45 4C 46
+CLASS=ELF32
+DATA=2LSB (Little Endian)
+MACHINE=MIPS (R5900)
+ENTRY_POINT=0x00100080
+
+[PROGRAM_HEADER]
+TYPE=LOAD
+OFFSET=0x00001000
+VADDR=0x00100000
+PADDR=0x00100000
+FILE_SIZE=2048
+MEM_SIZE=4096
+FLAGS=R-X
+
+[SECTION_HEADER]
+.text  0x00100000  0x00000800  (Code Segment)
+.rodata 0x00100800 0x00000200  (Read-Only Data)
+.data  0x00100A00  0x00000400  (Data Segment)
+
+[BYTECODE_DUMP]
+# Instruções MIPS fictícias para o seu parser ler:
+00100080: 3c080010  # lui   t0, 0x0010
+00100084: 25080000  # addiu t0, t0, 0
+00100088: 01094020  # add   t0, t0, t1
+0010008c: 08040020  # j     0x00100080
